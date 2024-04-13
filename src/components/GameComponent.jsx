@@ -36,7 +36,7 @@ export default function GameComponent() {
           <a href='https://github.com/ErasmoAlvarado'>erasmo.dev</a>
         </p>
         <div className='left'>
-          <p>Guess {counterData} of 10</p>
+          <p>Guess {counterData+1} of 10</p>
         </div>
         <input value={pokemonText} onChange={(e)=>{setPokemonText(e.target.value)}} placeholder="Search Pokemon" type="text" name="text" className='input'></input>
         {

@@ -1,12 +1,10 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import "./CardPokemonList.css"
-import up from '../assets/keyboard_up.svg'
 import { usePokemonName } from '../providers/usePokemonName';
 import axios from 'axios';
 import { useCounter } from '../providers/useCounter';
 import { useRandomPokemon } from '../providers/useRandomPokemon'
 import { setVariable } from '../functions/setVariable';
-import down from '../assets/keyboard_down.svg'
 import ArrowComponent from './ArrowComponent';
 
 
@@ -70,7 +68,7 @@ export default function CardPokemonList() {
   }, [pokemonNameData]);
 
   const pokemonList = useMemo(() => currentPokemon.map((data, index) => {
-    let gameStyle = answer[index].game ?'smallCard correct adjust':'smallCard adjust'
+    let gameStyle = answer[index].game ?'smallCard correct':'smallCard adjust'
     let type1Style = answer[index].type1 ?'smallCard correct':'smallCard'
     let type2Style = answer[index].type2 ?'smallCard correct':'smallCard'
     return (

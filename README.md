@@ -1,8 +1,15 @@
-# React + Vite
+# Pokémon Spotle 🌟
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to Pokémon Spotle, the fun and interactive way to spot your favorite Pokémon! Inspired by the game [spotle](https://spotle.io/), Can you guess who is that pokemon
 
-Currently, two official plugins are available:
+## About The Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Pokémon Spotle is built with the modern JavaScript library **React** and utilizes the **PokéAPI** for fetching Pokémon data.
+
+## Getting Started
+
+To get a local copy up and running, follow these simple steps:
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/your_username_/Project-Name.git
