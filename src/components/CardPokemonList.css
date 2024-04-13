@@ -1,0 +1,198 @@
+
+
+.guess{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.pokemon-information{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 0.5em;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    border-radius: 100px;
+    height: 80px;
+    background-color: white;
+    overflow: hidden;
+    padding: 5px;
+    margin-right: 0.8em;
+}
+.guess img{
+    width: 75px;
+}
+
+.guess .pokemon-information p{
+    color: #FFFF;
+    font-size: 25px;
+    letter-spacing: 1.3px;
+}
+
+.guess .rows{
+    display: flex;
+    justify-content: space-between;
+}
+
+.guess .largeCard{
+        background-color: #E5E5E540;
+        height: 65px;
+        flex: 1.5;
+        padding: 5px 5px 5px 5px;
+        margin: 5px 5px 5px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        color: #FFFF;
+        flex-direction: column;
+
+}
+
+.correct {
+    background-color: rgba(106,208,116,.8) !important;
+}
+
+.close {
+    background-color: rgba(255,245,0,.7) !important;
+}
+
+.guess .smallCard{
+    background-color: #E5E5E540;
+    height: 65px;
+    flex: 1;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 5px;
+    color: #FFFF;
+
+}
+
+.adjust{
+    overflow: hidden;
+    font-size: 1.2vmin;
+}
+
+
+.guess .title{
+    font-size: 130%;
+    text-align: center;
+}
+
+.guess .arrowTitle{
+    display: flex;
+    align-items: center;
+}
+
+.guess .arrow{
+    width: 25px;
+}
+
+.lose{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    animation: appear;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.lose div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 160px !important;
+    height: 160px !important;
+}
+
+ .name{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.lose img{
+    width: 160px;
+}
+
+.winner {
+    margin-left: 1.5%;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.651);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .winnerCard {
+    width: 290px;
+    height: 535px;
+    background: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: appear;
+    animation-duration: 500ms;
+  }
+
+.winner h1{
+    color: rgba(106,208,116,.8)S!important;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.winner img{
+    width: 120%;
+}
+
+.winner button{
+    color: white;
+    background-color: #BA81C2;
+    width: 80%;
+}
+
+@keyframes appear {
+    from {
+        transform: translateX(1800px);
+        opacity: 0;
+      }
+    
+      to {
+        transform: translateX(0px);
+        opacity: 1;
+      }
+}
+
+.lose .title{
+    color: rgba(223, 70, 70, 0.8) !important;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+    .winnerCard {
+        width: 75vw;
+        height: 535px;
+        background: white;
+      }
+      
+  }

@@ -1,0 +1,26 @@
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 24px;
+}
+
+.logo{
+    height: 88px;
+    cursor: pointer;
+}
+
+.help{
+    height: 30px;
+    cursor: pointer;
+}
+
+button{
+    padding: 5px 10px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+}
