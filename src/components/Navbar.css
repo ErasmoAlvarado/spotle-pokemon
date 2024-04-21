@@ -31,4 +31,8 @@ button{
     .logo{
         height: 58px;
     }
+
+    .head{
+        position: static
+    }
   }
